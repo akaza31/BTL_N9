@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".TrangchuquantriActivity">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="48dp"
+            android:text="Chào mừng đến trang quản trị"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="345dp"
+            android:background="@drawable/admin"
+            android:orientation="horizontal"
+            android:padding="15px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15px"
+                android:text="Tài liệu chờ duyệt: "
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- TextView để hiển thị số lượng tài liệu chờ duyệt -->
+            <TextView
+                android:id="@+id/txtDemChoDuyet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="0"
+                android:textColor="@color/purple_700"
+                android:textSize="25sp"
+                android:textStyle="bold" /> <!-- Giá trị mặc định là 0 -->
+        </LinearLayout>
+
+        <!-- Các phần tử layout khác -->
+
+    </LinearLayout>
+</ScrollView>
